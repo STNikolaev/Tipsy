@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		926882F427B79A340046A853 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926882F327B79A340046A853 /* ResultViewController.swift */; };
+		926882F627B79A670046A853 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926882F527B79A670046A853 /* MainViewController.swift */; };
+		926882F927B7B0050046A853 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926882F827B7B0050046A853 /* Calculator.swift */; };
+		926882FB27B7B43C0046A853 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926882FA27B7B43C0046A853 /* Tips.swift */; };
 		ADB689532326708D006D4E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689522326708D006D4E2B /* AppDelegate.swift */; };
 		ADB689552326708D006D4E2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689542326708D006D4E2B /* SceneDelegate.swift */; };
-		ADB689572326708D006D4E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689562326708D006D4E2B /* ViewController.swift */; };
 		ADB6895A2326708D006D4E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB689582326708D006D4E2B /* Main.storyboard */; };
 		ADB6895C2326708E006D4E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895B2326708E006D4E2B /* Assets.xcassets */; };
 		ADB6895F2326708E006D4E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		926882F327B79A340046A853 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		926882F527B79A670046A853 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		926882F827B7B0050046A853 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		926882FA27B7B43C0046A853 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		ADB6894F2326708D006D4E2B /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB689522326708D006D4E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADB689542326708D006D4E2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADB689562326708D006D4E2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADB689592326708D006D4E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADB6895B2326708E006D4E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB6895E2326708E006D4E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		926882EF27B799210046A853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADB689582326708D006D4E2B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		926882F227B7994F0046A853 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				926882F527B79A670046A853 /* MainViewController.swift */,
+				926882F327B79A340046A853 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		926882F727B7AFED0046A853 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				926882F827B7B0050046A853 /* Calculator.swift */,
+				926882FA27B7B43C0046A853 /* Tips.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ADB689462326708D006D4E2B = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +90,9 @@
 			children = (
 				ADB689522326708D006D4E2B /* AppDelegate.swift */,
 				ADB689542326708D006D4E2B /* SceneDelegate.swift */,
-				ADB689562326708D006D4E2B /* ViewController.swift */,
-				ADB689582326708D006D4E2B /* Main.storyboard */,
+				926882F727B7AFED0046A853 /* Model */,
+				926882EF27B799210046A853 /* View */,
+				926882F227B7994F0046A853 /* Controller */,
 				ADB6895B2326708E006D4E2B /* Assets.xcassets */,
 				ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */,
 				ADB689602326708E006D4E2B /* Info.plist */,
@@ -94,7 +127,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "The App Brewery";
 				TargetAttributes = {
 					ADB6894E2326708D006D4E2B = {
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB689572326708D006D4E2B /* ViewController.swift in Sources */,
 				ADB689532326708D006D4E2B /* AppDelegate.swift in Sources */,
 				ADB689552326708D006D4E2B /* SceneDelegate.swift in Sources */,
+				926882F427B79A340046A853 /* ResultViewController.swift in Sources */,
+				926882F927B7B0050046A853 /* Calculator.swift in Sources */,
+				926882F627B79A670046A853 /* MainViewController.swift in Sources */,
+				926882FB27B7B43C0046A853 /* Tips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +228,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +289,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
